@@ -9,10 +9,11 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
   return (
     <html lang="en">
-      <body className='min-h-screen md:px-20'>{children}</body>
+      <body className='min-h-screen md:px-20 lg:px-40 2xl:px-60'>{children}
+      </body>
     </html>
   )
 }

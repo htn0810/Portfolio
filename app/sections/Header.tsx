@@ -3,7 +3,7 @@ import Image from 'next/image';
 import logo from '../../public/images/logo.jpg'
 
 import { useState } from 'react';
-import Sidebar from '../components/sidebar';
+import Sidebar from '../components/Sidebar';
 
 export default function Home() {
   const [showSidebar, setShowSideBar] = useState(false);
