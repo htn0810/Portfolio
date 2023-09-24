@@ -5,6 +5,7 @@ import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import TechStack from './sections/TechStack';
+import WorkEdu from './sections/WorkEdu';
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -17,7 +18,8 @@ export default function Home() {
     <main className="w-full min-h-screen relative overflow-hidden">
       <Header />
       <About />
-      <TechStack/>
+      <TechStack />
+      <WorkEdu />
     </main>
   )
 }

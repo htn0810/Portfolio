@@ -19,7 +19,7 @@ const TechStack = () => {
   return (
     <section className='w-full 2xl:mt-36 md:mt-20 mt-14 items-center px-3'>
         <h1 className='text-[#42446E] md:text-[30px] text-[24px] font-bold text-center'>My Tech Stack</h1>
-        <p className='text-[#666] md:text-[24px] text-[18px] font-normal text-center'>Technologies I’ve been working with recently</p>
+        <p className='text-[#666] md:text-[24px] text-base font-normal text-center'>Technologies I’ve been working with recently</p>
           <div className='grid xl:grid-cols-6 grid-cols-4 gap-x-3 md:gap-y-16 gap-y-8 md:mt-20 mt-10'>
               {arrayImgs.map((imgPath, id) => (
                   <div data-aos="zoom-in-up" key={id} className="col-span-1 flex justify-center">
