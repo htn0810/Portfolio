@@ -3,7 +3,7 @@ import avatar from '../../public/images/avatar.jpg'
 
 const About = () => {
     return (
-        <section className='w-full grid md:grid-cols-2 grid-cols-1 mt-20'>
+        <section id='home' className='w-full grid md:grid-cols-2 grid-cols-1 mt-20'>
             <div data-aos="fade-right" className='flex flex-col justify-center md:items-start items-center font-bold text-[#42446E] 2xl:text-[40px] 2xl:leading-[70px] sm:text-[32px] sm:leading-[50px] text-[24px] leading-[40px]'>
                 <span>Hi &#9996;,</span>
                 <span>My name is <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Thanh Nhan</span></span>

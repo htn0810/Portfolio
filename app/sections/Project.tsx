@@ -33,6 +33,26 @@ const Project = () => {
       teamSize: 1,
       date: 'Dec-2023 - Jan-2023'
     },
+    {
+      title: 'Digital Core',
+      img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80',
+      desc: 'This is example desc',
+      tech: 'HTML, JS, Scss, Reactjs, Mui, Springboot, MySQL',
+      livePreview: 'https://htn-movies.vercel.app/',
+      viewCode: 'https://github.com/htn0810/htn-movies',
+      teamSize: 1,
+      date: 'Dec-2023 - Jan-2023'
+    },
+    {
+      title: 'Facemesh Drawsiness',
+      img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80',
+      desc: 'This is example desc',
+      tech: 'HTML, Css, Python, Raspberry Pi',
+      livePreview: 'https://htn-movies.vercel.app/',
+      viewCode: 'https://github.com/htn0810/htn-movies',
+      teamSize: 1,
+      date: 'Dec-2023 - Jan-2023'
+    },
   ];
   return (
     <section id='project' className='w-full 2xl:mt-10 md:mt-6 mt-4 items-center px-3'>
@@ -43,7 +63,7 @@ const Project = () => {
       <div className='grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12'>
         {projectList.map(project => (
           <Fragment key={project.date}>
-            <div className="w-full flex flex-col rounded-xl overflow-hidden shadow-xl cursor-pointer hover:-translate-y-2 transition-transform">
+            <div data-aos="zoom-in-up" className="w-full flex flex-col rounded-xl overflow-hidden shadow-xl cursor-pointer hover:-translate-y-2 transition-transform">
               <div className='w-full 2xl:h-[260px] md:h-[220px] h-[200px] bg-cyan-300'>
                 <img src={project.img} alt="" className='w-full h-full bg-cover' />
               </div>

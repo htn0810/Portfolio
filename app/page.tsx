@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 import TechStack from './sections/TechStack';
 import WorkEdu from './sections/WorkEdu';
 import Project from './sections/Project';
+import Contact from './sections/Contact';
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -22,6 +23,7 @@ export default function Home() {
       <TechStack />
       <WorkEdu />
       <Project />
+      <Contact />
     </main>
   )
 }

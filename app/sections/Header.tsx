@@ -8,7 +8,7 @@ import Sidebar from '../components/Sidebar';
 export default function Home() {
   const [showSidebar, setShowSideBar] = useState(false);
   return (
-    <section className="w-full">
+    <section className="w-full bg-white">
       <header className='grid md:grid-cols-5 grid-cols-2 items-center md:px-0 px-20'>
         <Image src={logo} className='md:w-[100px] md:h-[100px] w-[60px] h-[60px] col-span-1' alt="Logo" />
         <ul className='col-span-4 justify-center text-[#666] font-medium 2xl:text-xl text-base md:flex hidden'>
