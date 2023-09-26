@@ -6,6 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import TechStack from './sections/TechStack';
 import WorkEdu from './sections/WorkEdu';
+import Project from './sections/Project';
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <TechStack />
       <WorkEdu />
+      <Project />
     </main>
   )
 }

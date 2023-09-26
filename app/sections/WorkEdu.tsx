@@ -43,7 +43,7 @@ const WorkEdu = () => {
     },
   ]
   return (
-      <section className='w-full 2xl:mt-36 md:mt-20 grid grid-cols-6 mt-14 items-center px-3'>
+      <section id="about" className='w-full 2xl:mt-36 md:mt-20 grid grid-cols-6 mt-14 items-center px-3'>
         <div className='md:col-start-2 md:col-end-6 col-start-1 col-end-7'>
             <div>
                 <h2 data-aos="zoom-in-down" className='md:text-[30px] text-[24px] text-center font-bold text-[#42446E] md:mb-10 mb-4'>About me</h2>
