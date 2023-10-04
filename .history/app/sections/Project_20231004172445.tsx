@@ -77,7 +77,7 @@ const Project = () => {
           <div
             key={project.date}
             data-aos="zoom-in-up"
-            className="w-full flex flex-col rounded-xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl hover:scale-105 transition-transform"
+            className="w-full flex flex-col rounded-xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition-transform"
           >
             <div className="w-full 2xl:h-[260px] md:h-[220px] h-[200px] bg-cyan-300">
               <Image
