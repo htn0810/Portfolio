@@ -18,16 +18,9 @@ export default function Home() {
     });
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleUpdateScroll);
-    return function unMount() {
-      window.removeEventListener("scroll", handleUpdateScroll);
-    };
-  });
-
-  const handleUpdateScroll = () => {
+  window.addEventListener("scroll", () => {
     setOnTop(window.scrollY);
-  };
+  });
 
   const handleBackToTop = () => {
     window.scrollTo(0, 0);
@@ -44,7 +37,7 @@ export default function Home() {
       <Contact />
       {onTop && onTop >= 200 && (
         <div
-          className="fixed bottom-10 right-10 w-[40px] h-[40px] rounded-full bg-gray-400 hover:bg-gray-500 hover:scale-110 transition-all cursor-pointer flex justify-center items-center"
+          className="fixed bottom-10 right-10 w-[40px] h-[40px] rounded-full bg-cyan-700 cursor-pointer flex justify-center items-center"
           onClick={handleBackToTop}
         >
           <svg

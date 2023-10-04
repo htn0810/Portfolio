@@ -21,7 +21,7 @@ const Project = () => {
     {
       title: "NFT Landing Page",
       img: nft,
-      desc: "A landing page about ETH with responsive",
+      desc: "This is example desc",
       tech: "HTML, JS, Scss, Reactjs",
       livePreview: "https://htn-nft-landing.vercel.app/",
       viewCode: "https://github.com/htn0810/htn-nft-landing",
@@ -41,7 +41,7 @@ const Project = () => {
     {
       title: "Digital Core",
       img: digicore,
-      desc: "Digital app core where centralize all internal apps of Bosch, friendly with associates",
+      desc: "This is example desc",
       tech: "HTML, JS, Scss, Reactjs, Redux, Mui, Springboot, MySQL",
       livePreview: "https://htn-movies.vercel.app/",
       viewCode: "https://github.com/htn0810/htn-movies",
@@ -51,7 +51,7 @@ const Project = () => {
     {
       title: "Facemesh Drawsiness",
       img: drowsiness,
-      desc: "Build system simulation when driver drive the car, detect face of driver to detect drowsiness, MQ3 detect if driver used ancohol, beer.",
+      desc: "This is example desc",
       tech: "HTML, Css, Python, Raspberry Pi",
       livePreview: "https://htn-movies.vercel.app/",
       viewCode: "https://github.com/htn0810/htn-movies",

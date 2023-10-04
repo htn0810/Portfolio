@@ -8,7 +8,7 @@ import Sidebar from "../components/Sidebar";
 export default function Home() {
   const [showSidebar, setShowSideBar] = useState(false);
   return (
-    <section className="w-full bg-transparent">
+    <section className="w-full bg-[linear-gradient(90deg,_#000428_-2.06%,_#004e92_100%)]">
       <header className="grid md:grid-cols-5 grid-cols-2 items-center md:px-0 px-10">
         <Image
           src={logo}

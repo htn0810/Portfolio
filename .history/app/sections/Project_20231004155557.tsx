@@ -51,7 +51,7 @@ const Project = () => {
     {
       title: "Facemesh Drawsiness",
       img: drowsiness,
-      desc: "Build system simulation when driver drive the car, detect face of driver to detect drowsiness, MQ3 detect if driver used ancohol, beer.",
+      desc: "Build system simulation when driver drive the car, if motor run, system will detect face of driver and calculate distance of eyes or lips to detect drowsiness, MQ3 detect if driver used ancohol, beer.",
       tech: "HTML, Css, Python, Raspberry Pi",
       livePreview: "https://htn-movies.vercel.app/",
       viewCode: "https://github.com/htn0810/htn-movies",

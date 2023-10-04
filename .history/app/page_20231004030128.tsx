@@ -9,7 +9,7 @@ import WorkEdu from "./sections/WorkEdu";
 import Project from "./sections/Project";
 import Contact from "./sections/Contact";
 export default function Home() {
-  const [onTop, setOnTop] = useState<number>();
+  const [onTop, setOntop] = useState<number>();
   useEffect(() => {
     AOS.init({
       startEvent: "DOMContentLoaded",
@@ -18,21 +18,9 @@ export default function Home() {
     });
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleUpdateScroll);
-    return function unMount() {
-      window.removeEventListener("scroll", handleUpdateScroll);
-    };
+  window.addEventListener("scroll", () => {
+    setOntop(window.scrollY);
   });
-
-  const handleUpdateScroll = () => {
-    setOnTop(window.scrollY);
-  };
-
-  const handleBackToTop = () => {
-    window.scrollTo(0, 0);
-    console.log("hello");
-  };
 
   return (
     <main className="w-full min-h-screen relative overflow-hidden">
@@ -43,10 +31,7 @@ export default function Home() {
       <Project />
       <Contact />
       {onTop && onTop >= 200 && (
-        <div
-          className="fixed bottom-10 right-10 w-[40px] h-[40px] rounded-full bg-gray-400 hover:bg-gray-500 hover:scale-110 transition-all cursor-pointer flex justify-center items-center"
-          onClick={handleBackToTop}
-        >
+        <div className="fixed bottom-10 right-10 w-[40px] h-[40px] rounded-full bg-cyan-700 cursor-pointer flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

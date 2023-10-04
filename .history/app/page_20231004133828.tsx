@@ -18,16 +18,9 @@ export default function Home() {
     });
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleUpdateScroll);
-    return function unMount() {
-      window.removeEventListener("scroll", handleUpdateScroll);
-    };
-  });
-
-  const handleUpdateScroll = () => {
+  window.addEventListener("scroll", () => {
     setOnTop(window.scrollY);
-  };
+  });
 
   const handleBackToTop = () => {
     window.scrollTo(0, 0);
