@@ -4,7 +4,6 @@ import nft from "../../public/images/nft.png";
 import movies from "../../public/images/movies.png";
 import digicore from "../../public/images/digicore.png";
 import drowsiness from "../../public/images/drowsiness.png";
-import Link from "next/link";
 
 type Project = {
   title: string;
@@ -45,8 +44,7 @@ const Project = () => {
       desc: "Digital app core where centralize all internal apps of Bosch, friendly with associates",
       tech: "HTML, JS, Scss, Reactjs, Redux, Mui, Springboot, MySQL",
       livePreview: "https://htn-movies.vercel.app/",
-      viewCode:
-        "https://www.bosch.com.vn/our-company/bosch-in-vietnam/ho-chi-minh-city-rbvh/",
+      viewCode: "https://github.com/htn0810/htn-movies",
       teamSize: 4,
       date: "Apr-2023 - OCt-2023",
     },
@@ -61,9 +59,6 @@ const Project = () => {
       date: "Feb-2023 - May-2023",
     },
   ];
-
-  const handleNavigateCode = () => {};
-
   return (
     <section
       id="project"
@@ -77,14 +72,12 @@ const Project = () => {
           Things I’ve built so far
         </span>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12">
+      <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12">
         {projectList.map((project) => (
-          <Link
-            href={project.viewCode!}
+          <div
             key={project.date}
             data-aos="zoom-in-up"
             className="w-full flex flex-col rounded-xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl hover:scale-105 transition-transform"
-            onClick={handleNavigateCode}
           >
             <div className="w-full 2xl:h-[260px] md:h-[220px] h-[200px] bg-cyan-300">
               <Image
@@ -128,7 +121,7 @@ const Project = () => {
               </span>
               <span>{project.date}</span>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </section>

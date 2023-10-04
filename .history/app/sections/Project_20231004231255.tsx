@@ -77,7 +77,7 @@ const Project = () => {
           Things I’ve built so far
         </span>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12">
+      <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12">
         {projectList.map((project) => (
           <Link
             href={project.viewCode!}
